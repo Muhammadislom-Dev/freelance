@@ -1,0 +1,13 @@
+.header{
+    margin: 15px 0;
+    position: relative;
+}
+
+.header-name{
+    position: absolute;
+    top: 15%;
+    width: 650px;
+    font-size: 36px;
+    color: red;
+    line-height: 45px;
+}
