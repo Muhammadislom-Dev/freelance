@@ -40,7 +40,11 @@
     color: #000;
     font-weight: 500;
     font-size: 18px;
+    transition: 0.5s;
     line-height: 20px;
+}
+.navbar-phone:hover{
+    transform: scale(1.1);
 }
 .navbar-pic{
     width: 25px;
