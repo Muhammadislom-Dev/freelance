@@ -1,7 +1,14 @@
 .navbar{
     padding: 40px 0;
 }
-.navbar .container{
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-list{
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,4 +55,13 @@
 }
 .navbar-pic{
     width: 25px;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 5px 8px;
 }

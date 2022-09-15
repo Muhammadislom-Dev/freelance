@@ -9,30 +9,30 @@ import phone from "../../Assests/Img/phone.png";
 function Navbar() {
   return (
     <div className="navbar">
-      <Fade top>
-        <div className="container">
-          <Link className="navbar-link" to="/">
-            <img src={digital} alt="" className="navbar-img" />
-          </Link>
-          <form className="navbar-form">
-            <input
-              type="text"
-              required
-              placeholder="Search..."
-              className="navbar-input"
-            />
-            <button type="submit" className="navbar-button">
-              <img src={search} alt="" className="navbar-image" />
-            </button>
-          </form>
-          <div className="navbar-list">
-            <a href="+74952217843" className="navbar-phone">
-              <img src={phone} alt="" className="navbar-pic" /> +7 (495)
-              221-78-43
-            </a>
-          </div>
-        </div>
-      </Fade>
+      <div className="container">
+        <Fade top>
+            <Link className="navbar-link" to="/">
+              <img src={digital} alt="" className="navbar-img" />
+            </Link>
+            <form className="navbar-form">
+              <input
+                type="text"
+                required
+                placeholder="Search..."
+                className="navbar-input"
+              />
+              <button type="submit" className="navbar-button">
+                <img src={search} alt="" className="navbar-image" />
+              </button>
+            </form>
+            <div className="navbar-list">
+              <a href="+74952217843" className="navbar-phone">
+                <img src={phone} alt="" className="navbar-pic" /> +7 (495)
+                221-78-43
+              </a>
+            </div>
+        </Fade>
+      </div>
     </div>
   );
 }
