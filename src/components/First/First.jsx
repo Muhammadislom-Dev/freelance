@@ -12,9 +12,11 @@ const First = () => {
     <div className="first">
       <Fade left cascade>
         <div className="container">
+          <h2 className="first-name">Бизнес-сувениры с нанесением логотипа и другой персонализацией</h2>
           <div className="card">
             <div className="left">
               <img src={Pen} alt="" />
+              <p>Ручки</p>
             </div>
             <div className="right">
               <ul>
@@ -33,6 +35,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Headphone} alt="" />
+              <p>Электроника</p>
             </div>
             <div className="right">
               <ul>
@@ -52,6 +55,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Mirror} alt="" />
+              <p>Промо-сувениры</p>
             </div>
             <div className="right">
               <ul>
@@ -73,6 +77,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Notebook} alt="" />
+              <p>Корпоративные подарки</p>
             </div>
             <div className="right">
               <ul>
@@ -93,6 +98,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Mirror} alt="" />
+              <p>Промо-одежда</p>
             </div>
             <div className="right">
               <ul>
@@ -113,6 +119,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Notebook2} alt="" />
+              <p>Ежедневники</p>
             </div>
             <div className="right">
               <ul>
