@@ -7,12 +7,15 @@
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
+    margin-left: 70px;
+    margin-bottom: 20px;
 }
 
 .section-list{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-image{
@@ -55,6 +58,14 @@
 
 .section-subname{
     font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+}
+
+.section-subname:hover{
+    color: #da167b;
 }
 .section-title{
     margin: 15px 0;

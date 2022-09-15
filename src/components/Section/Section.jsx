@@ -18,6 +18,7 @@ import i11 from '../../Assests/Img/11.png'
 import i12 from '../../Assests/Img/12.png'
 import i13 from '../../Assests/Img/13.png'
 
+
 function Section() {
   return (
     <div className="section">
