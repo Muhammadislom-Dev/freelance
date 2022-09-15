@@ -1,0 +1,48 @@
+.slide-info {
+    background: rgba(255, 255, 255, .85);
+    padding: 35px;
+    font-size: 18px;
+    min-width: 450px;
+    width: 620px;
+    text-align: left;
+    left: 55%;
+    box-shadow: #fff 0 0 6px;
+    margin-left: auto;
+    margin-right: 150px;
+
+}
+
+.slide-inner{
+    background-image: url('../../shopping.jfif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+
+.slide-info>h2 {
+    font-weight: 500;
+}
+
+.slide-info>ul>li {
+    font-style: 16px;
+    margin: 0;
+}
+
+.slide-info>a {
+    display: block;
+    margin-left: auto;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px 8px 15px;
+    background-color: #01A2ED;
+    border-radius: 5px;
+}
+
+.slide-info > a:hover{
+    color: #fff;
+    background-color: #f00;
+}
