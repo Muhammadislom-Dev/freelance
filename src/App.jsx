@@ -1,24 +1,80 @@
-import './App.css';
-import Carousel from './components/Carousel/Carousel';
-import First from './components/First/First';
-import { Header } from './components/Header/Header';
-import { Home } from './components/Home/Home';
-import Navbar from './components/Navbar/Navbar';
-import Second from './components/Second/Second';
-import Section from './components/Section/Section';
-import TextPage from './components/TextPage/TextPage';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import About1 from "./components/AboutProduct/About1";
+import About2 from "./components/AboutProduct/About2";
+import About3 from "./components/AboutProduct/About3";
+import Carousel from "./components/Carousel/Carousel";
+import First from "./components/First/First";
+import Footer from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Home } from "./components/Home/Home";
+import Map from "./components/Map/Map";
+import Navbar from "./components/Navbar/Navbar";
+import ProductAbout from "./components/ProductAbout/ProductAbout";
+import Second from "./components/Second/Second";
+import Section from "./components/Section/Section";
+import Slider from "./components/Slider/Slider";
+import TextPage from "./components/TextPage/TextPage";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
-      <Home />
-      <Section />
-      <First />
-      <Second />
-      <Carousel />
-      <TextPage />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Section />
+              <First />
+              <Second />
+              <Slider />
+              <Carousel />
+              <TextPage />
+            </>
+          }
+        />
+        <Route
+          path="about1"
+          element={
+            <>
+              <About1 />
+              <Slider />
+            </>
+          }
+        />
+        <Route
+          path="about2"
+          element={
+            <>
+              <About2 />
+              <Slider />
+            </>
+          }
+        />
+        <Route
+          path="about3"
+          element={
+            <>
+              <About3 />
+              <Slider />
+            </>
+          }
+        />
+        <Route
+          path="/product"
+          element={
+            <>
+              <ProductAbout />
+              <Carousel />
+            </>
+          }
+        />
+      </Routes>
+      <Map />
+      <Footer />
     </div>
   );
 }
