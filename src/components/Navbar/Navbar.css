@@ -1,5 +1,5 @@
 .navbar{
-    padding: 40px 0;
+    margin: 20px 0;
 }
 
 .navbar-box{
@@ -16,12 +16,24 @@
 .navbar-img{
     width: 250px;
 }
-.navbar-input{
+.navbar-label{
     outline: none;
     border: 1.5px solid #000;
-    width: 310px;
+    width: 350px;
     padding: 8px 13px;
-    border-radius: 5px 0 0px 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.navbar-imgs{
+    width: 20px;
+    cursor: pointer;
+}
+.navbar-input{
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 0 10px;
 }
 .navbar-button{
     border: none;
