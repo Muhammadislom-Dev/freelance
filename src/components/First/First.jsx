@@ -6,6 +6,7 @@ import Notebook2 from "../../Assests/Img/notebook2.jpg";
 import Headphone from "../../Assests/Img/headphone.jpg";
 import "./First.scss";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 
 const First = () => {
   return (
@@ -16,7 +17,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Pen} alt="" />
-              <p>Ручки</p>
+              <Link to="/product" className="product-link">Ручки</Link>
             </div>
             <div className="right">
               <ul>
@@ -35,7 +36,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Headphone} alt="" />
-              <p>Электроника</p>
+              <Link to="/product" className="product-link">Электроника</Link>
             </div>
             <div className="right">
               <ul>
@@ -55,7 +56,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Mirror} alt="" />
-              <p>Промо-сувениры</p>
+              <Link to="/product" className="product-link">Промо-сувениры</Link>
             </div>
             <div className="right">
               <ul>
@@ -77,7 +78,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Notebook} alt="" />
-              <p>Корпоративные подарки</p>
+              <Link to="/product" className="product-link">Корпоративные подарки</Link>
             </div>
             <div className="right">
               <ul>
@@ -98,7 +99,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Mirror} alt="" />
-              <p>Промо-одежда</p>
+              <Link to="/product" className="product-link" >Промо-одежда</Link>
             </div>
             <div className="right">
               <ul>
@@ -119,7 +120,7 @@ const First = () => {
           <div className="card">
             <div className="left">
               <img src={Notebook2} alt="" />
-              <p>Ежедневники</p>
+              <Link  to="/product" className="product-link">Ежедневники</Link>
             </div>
             <div className="right">
               <ul>
