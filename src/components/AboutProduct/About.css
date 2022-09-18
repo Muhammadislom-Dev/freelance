@@ -1,0 +1,32 @@
+.large-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-name{
+    /* margin: 30px 0; */
+    font-size: 35px;
+    line-height: 35px;
+    font-family: sans-serif;
+    width: 750px;
+    margin:30px auto;
+}
+
+.about-img{
+    width: 700px;
+    height: 400px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.about-text{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    width: 850px;
+    margin: 20px auto;
+}
