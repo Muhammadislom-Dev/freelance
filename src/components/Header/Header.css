@@ -14,7 +14,6 @@
 }
 nav {
     background-color: #0055A5;
-
 }
 .header__item>a {
     display: inline-block;
@@ -34,4 +33,5 @@ nav {
 
 .header__item > a:hover{
     background-color: #01a2ed;
+    color: #fff;
 }
