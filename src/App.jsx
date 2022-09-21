@@ -11,6 +11,7 @@ import { Home } from "./components/Home/Home";
 import Map from "./components/Map/Map";
 import Navbar from "./components/Navbar/Navbar";
 import ProductAbout from "./components/ProductAbout/ProductAbout";
+import ProductPage from "./components/ProductPage/ProductPage";
 import Second from "./components/Second/Second";
 import Section from "./components/Section/Section";
 import Slider from "./components/Slider/Slider";
@@ -19,7 +20,6 @@ import TextPage from "./components/TextPage/TextPage";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Header />
       <Routes>
         <Route
@@ -27,10 +27,10 @@ function App() {
           element={
             <>
               <Home />
-              <Section />
               <First />
+              <Section />
               <Second />
-              <Slider />
+              {/* <Slider /> */}
               <Carousel />
               <TextPage />
             </>
@@ -41,7 +41,7 @@ function App() {
           element={
             <>
               <About1 />
-              <Slider />
+              {/* <Slider /> */}
             </>
           }
         />
@@ -50,7 +50,7 @@ function App() {
           element={
             <>
               <About2 />
-              <Slider />
+              {/* <Slider /> */}
             </>
           }
         />
@@ -68,10 +68,11 @@ function App() {
           element={
             <>
               <ProductAbout />
-              <Carousel />
+              {/* <Carousel /> */}
             </>
           }
         />
+        <Route path="/about" element={<ProductPage />} />
       </Routes>
       <Map />
       <Footer />
