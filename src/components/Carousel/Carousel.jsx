@@ -1,92 +1,63 @@
-import React from "react";
+import * as React from "react";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 import "./Carousel.css";
 import instagram from "../../Assests/Img/instagram.png";
-import img1 from "../../Assests/Img/img1.png";
+import img1 from "../../Assests/Img/images.png";
 import instalogo from "../../Assests/Img/insta-logo.jpg";
 import Zoom from "react-reveal/Zoom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Carousel() {
   return (
     <div className="carousels">
-      <div className="container">
+      <div className="containers">
         <a href="https://instagram.com" className="carousel-link">
           <img src={instagram} alt="" className="carousel-img" />
           Instagram @digital_printing_ru
         </a>
-        <Zoom bottom cascade>
-        <div className="carousel-title">
           <div className="carousel-list">
-            <img src={img1} alt="" className="carousel-pic" />
-            <div className="carousel__item">
-              <img src={instalogo} alt="" className="carousel-logo" />
-              <div className="carousel-items">
-                <a href="#" className="carousel-links">
-                  digital_printing_ru
-                </a>
-                <p className="carousel-day">1 день назад</p>
-              </div>
+            <div className="carousel-items">
+              <img src={img1} alt="" className="carousel-pic" />
+              <h4 className="carousel-name">Urmila Bale</h4>
+              <Stack spacing={1}  >
+                <Rating style={{marginLeft:"90px"}}
+                  name="half-rating-read"
+                  defaultValue={2.5}
+                  precision={0.5}
+                  readOnly
+                />
+              </Stack>
+              <p className="carousel-subname">Creative Director</p>
             </div>
-            <p className="carousel-text">
-              Привет, друзья ✌🏼🍂! Глядя на удивительный простор календарной
-              сетки, кто-нибудь задавался вопросом🙄: почему это так здорово
-              выглядит{" "}
-            </p>
-          </div>
-          <div className="carousel-list">
-            <img src={img1} alt="" className="carousel-pic" />
-            <div className="carousel__item">
-              <img src={instalogo} alt="" className="carousel-logo" />
-              <div className="carousel-items">
-                <a href="#" className="carousel-links">
-                  digital_printing_ru
-                </a>
-                <p className="carousel-day">1 день назад</p>
-              </div>
+            <div className="carousel-items">
+              <img src={img1} alt="" className="carousel-pic" />
+              <h4 className="carousel-name">Urmila Bale</h4>
+              <Stack spacing={1}  >
+                <Rating style={{marginLeft:"90px"}}
+                  name="half-rating-read"
+                  defaultValue={2.5}
+                  precision={0.5}
+                  readOnly
+                />
+              </Stack>
+              <p className="carousel-subname">Creative Director</p>
             </div>
-            <p className="carousel-text">
-              Привет, друзья ✌🏼🍂! Глядя на удивительный простор календарной
-              сетки, кто-нибудь задавался вопросом🙄: почему это так здорово
-              выглядит{" "}
-            </p>
-          </div>
-          <div className="carousel-list">
-            <img src={img1} alt="" className="carousel-pic" />
-            <div className="carousel__item">
-              <img src={instalogo} alt="" className="carousel-logo" />
-              <div className="carousel-items">
-                <a href="#" className="carousel-links">
-                  digital_printing_ru
-                </a>
-                <p className="carousel-day">1 день назад</p>
-              </div>
+            <div className="carousel-items">
+              <img src={img1} alt="" className="carousel-pic" />
+              <h4 className="carousel-name">Urmila Bale</h4>
+              <Stack spacing={1}  >
+                <Rating style={{marginLeft:"90px"}}
+                  name="half-rating-read"
+                  defaultValue={2.5}
+                  precision={0.5}
+                  readOnly
+                />
+              </Stack>
+              <p className="carousel-subname">Creative Director</p>
             </div>
-            <p className="carousel-text">
-              Привет, друзья ✌🏼🍂! Глядя на удивительный простор календарной
-              сетки, кто-нибудь задавался вопросом🙄: почему это так здорово
-              выглядит{" "}
-            </p>
-          </div>
-          <div className="carousel-list">
-            <img src={img1} alt="" className="carousel-pic" />
-            <div className="carousel__item">
-              <img src={instalogo} alt="" className="carousel-logo" />
-              <div className="carousel-items">
-                <a href="#" className="carousel-links">
-                  digital_printing_ru
-                </a>
-                <p className="carousel-day">1 день назад</p>
-              </div>
-            </div>
-            <p className="carousel-text">
-              Привет, друзья ✌🏼🍂! Глядя на удивительный простор календарной
-              сетки, кто-нибудь задавался вопросом🙄: почему это так здорово
-              выглядит{" "}
-            </p>
           </div>
         </div>
-        </Zoom>
-      </div>
     </div>
   );
 }
