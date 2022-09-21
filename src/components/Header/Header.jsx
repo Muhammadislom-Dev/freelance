@@ -1,33 +1,36 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import digital from "../../Assests/Img/prints.png";
 import "./Header.css";
+
+
 export const Header = () => {
   return (
     <nav>
       <div className="container">
         <ul className="header__list">
           <li className="header__item">
-            <NavLink to="/">Вся продукция</NavLink>
+            <Link className="header-link" to="/">
+              <img src={digital} alt="" className="header-img" />
+            </Link>
           </li>
           <li className="header__item">
-            <NavLink>Открытки</NavLink>
+            <NavLink to="/" >Home</NavLink>
           </li>
           <li className="header__item">
-            <NavLink>Наклейки</NavLink>
+            <NavLink>About Us</NavLink>
           </li>
           <li className="header__item">
-            <NavLink>Визитки</NavLink>
+            <NavLink>Blog</NavLink>
           </li>
           <li className="header__item">
-            <NavLink>Бирки</NavLink>
+            <NavLink>Company</NavLink>
           </li>
           <li className="header__item">
-            <NavLink>Календари 2023</NavLink>
+            <NavLink>News</NavLink>
           </li>
           <li className="header__item">
-            <NavLink>Интерьер</NavLink>
-          </li>
-          <li className="header__item">
-            <NavLink>Портфолио</NavLink>
+            <NavLink>Contact</NavLink>
           </li>
         </ul>
       </div>
