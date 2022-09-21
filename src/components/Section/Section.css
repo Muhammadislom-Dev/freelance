@@ -1,101 +1,112 @@
-.section{
-    position: relative;
-}
-.section-name{
-    font-size: 30px;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-    margin-left: 70px;
-    margin-bottom: 20px;
+.section {
+  padding: 50px 0;
+  position: relative;
 }
 
-.section-list{
+
+.section-names {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.section-name {
+  padding: 10px 0;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.section-text{
+    color: #fff;
+    font-size: 18px;
+    width: 500px;
+}
+
+.section-left>a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f00;
+    padding: 15px 25px 18px 25px;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-size: 18px;
+    border: 2px solid #f00;
+}
+
+.section-left>a:hover{
+    color: #f00;
+    background-color: #fff;
+    border: 3px solid #f00;
+}
+
+.section-subtext{
+    color: #fff;
+}
+
+.section-img{
+    width: 680px;
+    height: 450px;
+}
+
+.section-page{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.section-image{
-    width: 560px;
-    transition: 0.4s;
-}
-.section-image:hover{
-    transform: scale(1.04);
-}
-
-.section-imgs{
-    width: 280px;
-    height: 270px;
-    transition: 0.4s;
-}
-.section-imgs:hover{
-    transform: scale(1.04);
+.section-left{
+    width: 840px;
+    padding: 55px 0;
+    padding-left: 100px;
+    background-color: #302780;
 }
 
-.section-item{
-    margin: 0 8px;
+.section-btn{
+    position: absolute;
+    width: 120px;
+    border: none;
+    background-color: #fff;
+    z-index: 1;
+    height: 120px;
+    left: 75%;
+    top: 35%;
+    border-radius: 50%;
+    transition: 0.9s;
 }
-
-.section-pic{
-    width: 270px;
-    transition: 0.4s;
-}
-.section-pic:hover{
-    transform: scale(1.04);
-}
-
-.section-pics{
-    width: 580px;
-    height: 270px;
-    transition: 0.3s;
-}
-.section-pics:hover{
-    transform: scale(1.04);
-}
-
-.section-subname{
-    font-size: 18px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    color: black;
-}
-
-.section-subname:hover{
-    color: #da167b;
-}
-.section-title{
-    margin: 15px 0;
-    display: flex;
-    justify-content: center;
-}
-.section-picture{
-    margin: 0 15px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.section-picture:hover{
+.section-btn:hover{
     transform: scale(1.15);
 }
-.section-lists{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
+
+.section-play{
+    width: 50px;
 }
-.section-subtext{
-    width: 200px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    margin: 0 10px;
+
+.modal-btn{
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -1%;
+    z-index:1;
+    left: 95%;
 }
-.section-items{
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
+
+.section-modal{
+    width: 660px;
+    height: 350px;
+}
+
+.modal-close{
+    width: 25px;
+    height: 25px;
+}
+
+.section .ReactModal__Overlay .ReactModal__Overlay--after-open{
+    background-color: red;
 }
