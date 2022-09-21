@@ -47,8 +47,6 @@ const First = () => {
                 <li className="hid">Пластиковые ручки</li>
                 <li className="hid">Текстовыделители</li>
                 <li className="hid">Футляры для ручек</li>
-                <li className="hid">Детская одежда</li>
-                <li className="hid">Текстовыделители</li>
               </ul>
             </div>
           </div>
@@ -69,8 +67,6 @@ const First = () => {
                 <li className="hid">Пластиковые ручки</li>
                 <li className="hid">Текстовыделители</li>
                 <li className="hid">Детская одежда</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
               </ul>
             </div>
           </div>
@@ -91,8 +87,6 @@ const First = () => {
                 <li className="hid">Пластиковые ручки</li>
                 <li className="hid">Текстовыделители</li>
                 <li className="hid">Детская одежда</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
               </ul>
             </div>
           </div>
@@ -112,8 +106,6 @@ const First = () => {
                 <li className="hid">Детская одежда</li>
                 <li className="hid">Текстовыделители</li>
                 <li className="hid">Детская одежда</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
               </ul>
             </div>
           </div>
@@ -132,8 +124,6 @@ const First = () => {
                 <li className="dot">...</li>
                 <li className="hid">Пластиковые ручки</li>
                 <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
-                <li className="hid">Футляры для ручек</li>
                 <li className="hid">Футляры для ручек</li>
               </ul>
             </div>
