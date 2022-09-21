@@ -1,0 +1,49 @@
+.about{
+    padding: 40px 0;
+}
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.about-img{
+    width: 400px;
+    height: 350px;
+}
+
+.about-name{
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.about-cost{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-button{
+    width: 180px;
+    height: 45px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    border: 2px solid dodgerblue;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.about-button:hover{
+    background-color: transparent;
+    color: dodgerblue;
+    border: 3px solid dodgerblue;
+}
+
+.about-left{
+    margin: 0 45px;
+    width: 400px;
+}
+

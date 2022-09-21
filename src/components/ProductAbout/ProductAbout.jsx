@@ -1,205 +1,58 @@
 import React from "react";
 import "./ProductAbout.css";
-import ruchka from "../../Assests/Img/ruchkas.png";
+import notes from "../../Assests/Img/notes.png";
 import Zoom from "react-reveal/Zoom";
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
-
-
+import { Link } from "react-router-dom";
 
 function ProductAbout() {
   return (
     <div className="product">
       <div className="container">
         <h2 className="product-name">Ручки</h2>
-          <div className="product-box">
-           <Zoom  cascade>
-                <div className="product-list">
-                <img src={ruchka} alt="" className="product-img" />
-                <h4 className="product-names">Ручка шариковая BAY </h4>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 78,75 $
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Доступно</span> DP729491/327G
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 15004
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Бренд:</span> MAXEMA
-                </p>
-                </div>
-                <div className="product-list">
-                <img src={ruchka} alt="" className="product-img" />
-                <h4 className="product-names">Ручка шариковая BAY </h4>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 78,75 $
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Доступно</span> DP729491/327G
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 15004
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Бренд:</span> MAXEMA
-                </p>
-                </div>
-                <div className="product-list">
-                <img src={ruchka} alt="" className="product-img" />
-                <h4 className="product-names">Ручка шариковая BAY </h4>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 78,75 $
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Доступно</span> DP729491/327G
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>от</span> 15004
-                </p>
-                <p className="product-cost">
-                    {" "}
-                    <span>Бренд:</span> MAXEMA
-                </p>
-                </div>
-            </Zoom>
-            <Fade left cascade>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            </Fade>
-            <Bounce right cascade>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            <div className="product-list">
-              <img src={ruchka} alt="" className="product-img" />
-              <h4 className="product-names">Ручка шариковая BAY </h4>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 78,75 $
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Доступно</span> DP729491/327G
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>от</span> 15004
-              </p>
-              <p className="product-cost">
-                {" "}
-                <span>Бренд:</span> MAXEMA
-              </p>
-            </div>
-            </Bounce>
+        <div className="product-box">
+          <div className="product-title">
+            <div className="product-img1"><img src={notes} alt="" className="product-img" /></div>
+            <h3 className="product-names">On Daily Demand</h3>
+            <p className="product-cost">5.65 $</p>
+            <p className="product-text">
+              Lorem ipsum dolor sit amet contur adipiscing elit vam us lacinia.
+            </p>
           </div>
+          <div className="product-title">
+            <div className="product-img1"><img src={notes} alt="" className="product-img" /></div>
+            <h3 className="product-names">On Daily Demand</h3>
+            <p className="product-cost">5.65 $</p>
+            <p className="product-text">
+              Lorem ipsum dolor sit amet contur adipiscing elit vam us lacinia.
+            </p>
+          </div>
+          <div className="product-title">
+            <div className="product-img1"><img src={notes} alt="" className="product-img" /></div>
+            <h3 className="product-names">On Daily Demand</h3>
+            <p className="product-cost">5.65 $</p>
+            <p className="product-text">
+              Lorem ipsum dolor sit amet contur adipiscing elit vam us lacinia.
+            </p>
+          </div>
+
+          <div className="product-title">
+            <div className="product-img1"><img src={notes} alt="" className="product-img" /></div>
+            <h3 className="product-names">On Daily Demand</h3>
+            <p className="product-cost">5.65 $</p>
+            <p className="product-text">
+              Lorem ipsum dolor sit amet contur adipiscing elit vam us lacinia.
+            </p>
+          </div>
+
+          <div className="product-title">
+            <div className="product-img1"><img src={notes} alt="" className="product-img" /></div>
+            <h3 className="product-names">On Daily Demand</h3>
+            <p className="product-cost">5.65 $</p>
+            <p className="product-text">
+              Lorem ipsum dolor sit amet contur adipiscing elit vam us lacinia.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
