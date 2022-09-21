@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
-import digital from "../../Assests/Img/digital.png";
+import digital from "../../Assests/Img/prints.png";
 import search from "../../Assests/Img/search.png";
 import phone from "../../Assests/Img/phone.png";
 
