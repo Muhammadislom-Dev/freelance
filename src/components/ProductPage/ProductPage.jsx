@@ -1,40 +1,46 @@
-import React from "react";
-import ruchka from "../../Assests/Img/ruchkas.png";
 import "./ProductPage.css";
-import Fade from "react-reveal/Fade";
+import React from "react";
+import notes from '../../Assests/Img/notes.png'
+import { Link } from "react-router-dom";
 
 function ProductPage() {
   return (
-    <div className="about">
-      <div className="container">
-        <Fade left>
-          <div className="about-page">
-            <img src={ruchka} alt="" className="about-img" />
-          </div>
-        </Fade>
-        <Fade right>
-          <div className="about-left">
-            <h3 className="about-name">Ручки</h3>
-            <h4 className="about-names">Ручка шариковая BAY </h4>
-            <p className="about-cost">
-              {" "}
-              <span>от</span> 78,75 $
-            </p>
-            <p className="about-cost">
-              {" "}
-              <span>Доступно</span> DP729491/327G
-            </p>
-            <p className="about-cost">
-              {" "}
-              <span>от</span> 15004
-            </p>
-            <p className="about-cost">
-              {" "}
-              <span>Бренд:</span> MAXEMA
-            </p>
-            <button className="about-button">Buy Now</button>
-          </div>
-        </Fade>
+    <div id="abouts" className="homeabout">
+      <div className="container homeabout__container-desktop">
+        <div className="homeabout__left-side">
+          <h3 data-aos="fade-right" className="homeabout__left-title">
+            About Us
+          </h3>
+          <p data-aos="fade-right" className="homeabout__left-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error enim
+            debitis perspiciatis voluptatum nihil officiis laborum atque, quod
+            quos provident incidunt distinctio officia quidem beatae ullam! Cum
+            quos odit tempora. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Maiores officia odit praesentium obcaecati,
+            repellendus adipisci tenetur! Necessitatibus eligendi consectetur
+            deleniti dicta inventore, itaque, quae dolores libero eos ipsa a
+            quos.
+          </p>
+        </div>
+        <div data-aos="fade-up" className="homeabout__center">
+          <img
+            src={notes}
+            alt="Pero About"
+            className="homeabout__center-img"
+          />
+        </div>
+        <div className="homeabout__right-side">
+          <h3 data-aos="fade-left" className="homeabout__right-title">
+              The secret of purity
+          </h3>
+          <Link
+            data-aos="fade-left"
+            to="/"
+            className="homeabout__right-btn"
+          >
+            Lern More
+          </Link>
+        </div>
       </div>
     </div>
   );
