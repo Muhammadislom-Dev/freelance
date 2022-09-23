@@ -5,7 +5,7 @@ import phones from "../../Assests/Img/phones.png";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div id="contact" className="footer">
       <div className="container">
         <h2 className="footer-subname">Don’t Miss Out</h2>
         <form action="" className="footer-form">
