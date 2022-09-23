@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Carousel() {
   return (
     <div className="carousels">
-      <div className="containers">
+      <div className="container">
         <a href="https://instagram.com" className="carousel-link">
           <img src={instagram} alt="" className="carousel-img" />
           Instagram @digital_printing_ru
@@ -21,11 +21,12 @@ function Carousel() {
               <img src={img1} alt="" className="carousel-pic" />
               <h4 className="carousel-name">Urmila Bale</h4>
               <Stack spacing={1}  >
-                <Rating style={{marginLeft:"90px"}}
+                <Rating 
                   name="half-rating-read"
                   defaultValue={2.5}
                   precision={0.5}
                   readOnly
+                  className="carousel-star"
                 />
               </Stack>
               <p className="carousel-subname">Creative Director</p>
@@ -34,11 +35,12 @@ function Carousel() {
               <img src={img1} alt="" className="carousel-pic" />
               <h4 className="carousel-name">Urmila Bale</h4>
               <Stack spacing={1}  >
-                <Rating style={{marginLeft:"90px"}}
+                <Rating 
                   name="half-rating-read"
                   defaultValue={2.5}
                   precision={0.5}
                   readOnly
+                  className="carousel-star"
                 />
               </Stack>
               <p className="carousel-subname">Creative Director</p>
@@ -47,11 +49,12 @@ function Carousel() {
               <img src={img1} alt="" className="carousel-pic" />
               <h4 className="carousel-name">Urmila Bale</h4>
               <Stack spacing={1}  >
-                <Rating style={{marginLeft:"90px"}}
+                <Rating 
                   name="half-rating-read"
                   defaultValue={2.5}
                   precision={0.5}
                   readOnly
+                  className="carousel-star"
                 />
               </Stack>
               <p className="carousel-subname">Creative Director</p>
