@@ -16,7 +16,7 @@ export const Home = () => {
               <div className="slide-info">
                 <h2
                   className="slide-names"
-				  style={{color:"#F3C136"}}
+				          style={{color:"#F3C136"}}
                 >
                   Your next great adventure.
                 </h2>
