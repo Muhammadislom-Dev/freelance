@@ -1,5 +1,5 @@
 import React from "react";
-import P2 from "../../Assests/Img/p2.jpg";
+import blog from "../../Assests/Img/blog2.jpg";
 import "./About.css";
 
 
@@ -7,23 +7,28 @@ const About2 = () => {
   return (
     <div className="aboutp">
       <div className="container">
-        <h1 className="about-name">Цифровая печать длиной до 660мм (66см) на плотностях до 350гр</h1>
+      <h1 className="about__name">Lorem, ipsum dolor.</h1>
         <div className="large-container">
           <div className="top">
             <div className="img-container">
-              <img className="about-img" src={P2} alt="" />
+              <img className="about-img" src={blog} alt="" />
             </div>
-            <p className="about-text" >
-              Онлайн-типография №1 Digital-Printing.ru рада предложить вам
-              печать "длинных" форматов (до 33х66см) рекламной полиграфии на
-              наших современных цифровых печатных машинах. Допустимая плотность
-              бумаги и картона при этом составляет до 350гр (это плотнее
-              стандартных визиток). Подобный увеличенный формат позволяет нам
-              печатать "днинные" буклет размером 3А4 листа - 630х297мм малыми
-              тиражами, а также т.н. "суперобложки" для ваших книг, каталогов и
-              брошюр. Также мы можем напечатать для вас брошюры и каталоги с
-              горизонтальным (АЛЬБОМНЫМ) спуском формата 297х210мм (594х210мм в
-              развороте)
+            <p className="about-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis quae, maiores earum fuga enim labore doloremque
+              quaerat corrupti nostrum laudantium dolores facere ex
+              exercitationem! Accusamus eos quod tenetur aut harum. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Ratione neque rem
+              corrupti unde quae eius consectetur sequi sint quia nihil
+              laudantium molestias quisquam, illum officiis voluptatibus,
+              tenetur molestiae quibusdam veniam. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Repudiandae nisi, pariatur nesciunt,
+              maiores reiciendis dolores facilis nostrum autem deleniti
+              obcaecati, earum totam at cum? Fugiat rerum nesciunt amet odit
+              dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus qui, voluptates nostrum porro aspernatur non veritatis
+              cumque voluptatem blanditiis nihil sint eaque iure iste
+              reprehenderit omnis, modi nesciunt eos sequi?
             </p>
           </div>
         </div>
