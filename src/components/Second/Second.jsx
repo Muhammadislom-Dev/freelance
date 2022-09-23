@@ -1,73 +1,58 @@
 import React from "react";
-import "./Second.scss";
-import P1 from "../../Assests/Img/p1.jpg";
-import P2 from "../../Assests/Img/p2.jpg";
-import P3 from "../../Assests/Img/p3.jpg";
-import Zoom from "react-reveal/Zoom";
+import "./Second.css";
+import blog from "../../Assests/Img/blog1.jpg";
+import { CgCalendarDates, CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
-const Second = () => {
+function Second() {
   return (
     <div className="second">
-      <Zoom bottom cascade>
-        <div className="container">
-          <Link to="/about1">
-            <div className="s-card">
-              <div className="title">Преимущества цветной цифровой печати.</div>
-              <div className="image">
-                <img src={P1} alt="" />
-              </div>
-
-              <div className="body">
-                Ниже мы постарались ответить на вопросы о преимуществах цифровой
-                печати и срочной цифровой печати, которые больше всего
-                интересуют наших заказчиков. Мы постарались донести информацию о
-                том что цифровая печать: выгодна, цифровая печать позволяет
-                печатать полиграфию срочно, действительно срочно; позволяет вам
-                самим подготовить макет..
-              </div>
+      <div className="container">
+        <h2 className="second-name">Our Blog</h2>
+        <div className="second-page">
+          <div className="second-list">
+            <img src={blog} alt="" className="second-img" />
+            <h4 className="second-names">Lorem, ipsum.</h4>
+            <div className="second-item">
+              <p className="second-date">
+                <CgCalendarDates /> 05.09.2022
+              </p>
+              <Link to="/about1" className="second-btn">
+                <span className="blogs__btn-text">Learn More</span>
+                <CgArrowRightO className="blogs__btn-icon" />
+              </Link>
             </div>
-          </Link>
-
-          <Link to="/about2">
-            <div className="s-card">
-              <div className="title">
-                Цифровая печать длиной до 660мм (66см) на плотностях до 350гр
-              </div>
-              <div className="image">
-                <img src={P2} alt="" />
-              </div>
-
-              <div className="body">
-                Онлайн-типография №1 Digital-Printing.ru рада предложить вам
-                печать "длинных" форматов (до 33х66см) рекламной полиграфии на
-                наших современных цифровых печатных машинах. Допустимая
-                плотность бумаги и картона при этом составляет до 350гр (это
-                плотнее стандартных визиток). Подобный увеличенный формат ..
-              </div>
+          </div>
+          <div className="second-list">
+            <img src={blog} alt="" className="second-img" />
+            <h4 className="second-names">Lorem, ipsum.</h4>
+            <div className="second-item">
+              <p className="second-date">
+                <CgCalendarDates /> 05.09.2022
+              </p>
+              <Link to="/about2" className="second-btn">
+                <span className="blogs__btn-text">Learn More</span>
+                <CgArrowRightO className="blogs__btn-icon" />
+              </Link>
             </div>
-          </Link>
-
-          <Link to="/about3">
-            <div className="s-card">
-              <div className="title">Открытие раздела интерьерной печати</div>
-              <div className="image">
-                <img src={P3} alt="" />
-              </div>
-
-              <div className="body">
-                Мы рады сообщить вам о запуске раздела высококачественной
-                Интерьерной печати больших и малых форматов. К вашим услугам
-                самые разнообразные материалы от обычной бумаги, до плотных
-                постеров с накаткой на пенокартон форматом от А3 (420х297мм) до
-                А0+ шириной более метра (1120мм) и любой длиной
-              </div>
+          </div>
+          <div className="second-list">
+            <img src={blog} alt="" className="second-img" />
+            <h4 className="second-names">Lorem, ipsum.</h4>
+            <div className="second-item">
+              <p className="second-date">
+                <CgCalendarDates /> 05.09.2022
+              </p>
+              <Link to="/about3" className="second-btn">
+                <span className="blogs__btn-text">Learn More</span>
+                <CgArrowRightO className="blogs__btn-icon" />
+              </Link>
             </div>
-          </Link>
+          </div>
         </div>
-      </Zoom>
+      </div>
     </div>
   );
-};
+}
 
 export default Second;

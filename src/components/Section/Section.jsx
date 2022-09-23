@@ -20,26 +20,26 @@ const customStyles = {
 };
 
 function Section() {
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  // let subtitle;
+  // const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
+  // function afterOpenModal() {
+  //   // references are now sync'd and can be accessed.
+  //   subtitle.style.color = "#f00";
+  // }
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  // function closeModal() {
+  //   setIsOpen(false);
+  // }
 
-  const [korzinkaModal, setKorzinkaModal] = useState(false);
-  function openKorzinkaModal() {
-    setKorzinkaModal(!korzinkaModal);
-  }
+  // const [korzinkaModal, setKorzinkaModal] = useState(false);
+  // function openKorzinkaModal() {
+  //   setKorzinkaModal(!korzinkaModal);
+  // }
 
   return (
     <div className="section">
@@ -73,7 +73,7 @@ function Section() {
           <img src={images} alt="" className="section-img" />
           <button
             // onClick={() => openKorzinkaModal()}
-            onClick={openModal}
+            // onClick={openModal}
             className="section-btn"
           >
             <img src={play} alt="" className="section-play" />
@@ -81,7 +81,7 @@ function Section() {
         </div>
       </div>
 
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
@@ -102,7 +102,7 @@ function Section() {
             allowfullscreen
           ></iframe>
         </div>
-      </Modal>
+      </Modal> */}
 
       {/* <Modal1 className="modal" show={korzinkaModal} w={800} mh={400}>
         <button onClick={closeModal} className="modal-btn">
