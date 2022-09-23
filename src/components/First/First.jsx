@@ -1,137 +1,173 @@
-import React from "react";
-import Pen from "../../Assests/Img/pen.jpg";
-import Notebook from "../../Assests/Img/notebook.jpg";
-import Mirror from "../../Assests/Img/mirror.jpg";
-import Notebook2 from "../../Assests/Img/notebook2.jpg";
-import Headphone from "../../Assests/Img/headphone.jpg";
-import "./First.scss";
-import Fade from "react-reveal/Fade";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import data from "../../data";
+import "./First.css";
+import SlideBtn from "../../subcomponent/Slide/SlideBtn";
 
-const First = () => {
+const slide_btn_styles = {
+  color: "#5f9c95",
+  borderColor: "#5f9c95",
+};
+
+function First() {
+
+  const [activeIdx, setActiveIdx] = useState(1);
+  const [activeIdxMob, setActiveIdxMob] = useState(0);
+  const cardWidth = 200;
+
   return (
-    <div className="first">
-      <Fade left cascade>
-        <div className="container">
-          <h2 className="first-name">Бизнес-сувениры с нанесением логотипа и другой персонализацией</h2>
-          <div className="card">
-            <div className="left">
-              <img src={Pen} alt="" />
-              <Link to="/product" className="product-link">Ручки</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Деревянные ручки</li>
-                <li>Карандаши</li>
-                <li>Металлические ручки</li>
-                <li>Наборы с ручками</li>
-                <li className="hid">Пластиковые ручки</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
-                <li className="dot">...</li>
-              </ul>
-            </div>
+    <div id="category" className="first">
+      <div className="container">
+        <h2 className="first-names">Our Products</h2>
+        <div className="first-page"  data-aos="fade-up" >
+          <div
+            className="first-list"
+            style={{
+              transform: `translateX(-${
+                cardWidth * activeIdx + 30 * activeIdx
+              }px)`,
+            }}
+          >
+            {data.map((item, i) => (
+              <Link
+              to="/product"
+                className="first-link"
+                style={
+                  activeIdx - 1 === i || activeIdx + 1 === i || activeIdx === i
+                    ? {}
+                    : { opacity: 0, pointerEvents: "none" }
+                }
+              >
+                <div className="first-title">
+                  <img src={item.img} alt="" className="first-img" />
+                  <h4 className="first-name">{item.title}</h4>
+                </div>
+              </Link>
+            ))}
           </div>
 
-          <div className="card">
-            <div className="left">
-              <img src={Headphone} alt="" />
-              <Link to="/product" className="product-link">Электроника</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Бытовая техника</li>
-                <li>Внешние аккумуляторы</li>
-                <li>Внешние жесткие диски</li>
-                <li className="dot">...</li>
-                <li className="hid">Пластиковые ручки</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
-              </ul>
-            </div>
+          <div className="homeproducts__pagination">
+            {data.map((_, i) => (
+              <button
+                key={i}
+                className={`homeproducts__pagination-btn ${
+                  activeIdx === i ? "active" : ""
+                }`}
+                onClick={() =>
+                  setActiveIdx((prev) => {
+                    return i < 1
+                      ? 1
+                      : i > data.length - 2
+                      ? data.length - 2
+                      : i;
+                  })
+                }
+              ></button>
+            ))}
           </div>
-
-          <div className="card">
-            <div className="left">
-              <img src={Mirror} alt="" />
-              <Link to="/product" className="product-link">Промо-сувениры</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Антистрессы</li>
-                <li>Брелки</li>
-                <li>Зажигалки</li>
-                <li className="hid">Пластиковые ручки</li>
-
-                <li className="dot">...</li>
-                <li className="hid">Пластиковые ручки</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Детская одежда</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="left">
-              <img src={Notebook} alt="" />
-              <Link to="/product" className="product-link">Корпоративные подарки</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Дорожные органайзеры</li>
-                <li>Карандаши</li>
-                <li>Зажимы для купюр</li>
-                <li className="hid">Пластиковые ручки</li>
-
-                <li className="dot">...</li>
-                <li className="hid">Пластиковые ручки</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Детская одежда</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="left">
-              <img src={Mirror} alt="" />
-              <Link to="/product" className="product-link" >Промо-одежда</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Аксессуары</li>
-                <li>Брюки и шорты</li>
-                <li>Ветровки, куртки, жилеты</li>
-                <li className="hid">Пластиковые ручки</li>
-
-                <li className="dot">...</li>
-                <li className="hid">Детская одежда</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Детская одежда</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="left">
-              <img src={Notebook2} alt="" />
-              <Link  to="/product" className="product-link">Ежедневники</Link>
-            </div>
-            <div className="right">
-              <ul>
-                <li>Дорожные органайзеры</li>
-                <li>Карандаши</li>
-                <li>Зажимы для купюр</li>
-                <li className="hid">Пластиковые ручки</li>
-
-                <li className="dot">...</li>
-                <li className="hid">Пластиковые ручки</li>
-                <li className="hid">Текстовыделители</li>
-                <li className="hid">Футляры для ручек</li>
-              </ul>
-            </div>
-          </div>
+            <SlideBtn
+              className="homeproducts__slide-prev"
+              onClick={() =>
+                setActiveIdx((prev) =>
+                  prev - 1 < 1 ? data.length - 2 : prev - 1
+                )
+              }
+              style={{ ...slide_btn_styles, left: "15%" }}
+            />
+            <SlideBtn
+              rightIcon
+              className="homeproducts__slide-next"
+              onClick={() =>
+                setActiveIdx((prev) =>
+                  prev + 1 > data.length - 2 ? 1 : prev + 1
+                )
+              }
+              style={{ ...slide_btn_styles, left: "80%" }}
+            />
         </div>
-      </Fade>
+
+        <div className="first-pages"  data-aos="fade-up" >
+          <div
+            className="first-list first-lists"
+            style={{ transform: `translateX(-${(cardWidth * activeIdxMob) + (30 * activeIdxMob)}px)` }}
+          >
+            {data.map((e, i) => (
+              <Link
+              to="/product"
+                className="first-link"
+                style={(activeIdxMob === data.length - 1 && activeIdxMob - 1 === i) || activeIdxMob + 1 === i || activeIdxMob === i ? {} : { opacity: 0, pointerEvents: "none" }}
+              >
+                <div className="first-title">
+                  <img src={e.img} alt="" className="first-img" />
+                  <h4 className="first-name">{e.title}</h4>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="homeproducts__pagination">
+            {data.map((_, i) => (
+              <button
+              className={`homeproducts__pagination-btn ${activeIdxMob === i ? "active" : ""}`}
+              onClick={() => setActiveIdxMob(i)}
+              ></button>
+            ))}
+          </div>
+            <SlideBtn
+              className="homeproducts__slide-prev"
+              onClick={() => setActiveIdxMob(prev => prev < 1 ? prev : prev - 1)}
+              style={{ ...slide_btn_styles, left: "-100px" }}
+            />
+            <SlideBtn
+              rightIcon
+              className="homeproducts__slide-next"
+              onClick={() => setActiveIdxMob(prev => prev + 1 > data.length - 2 ? prev : prev + 1)}
+              style={{ ...slide_btn_styles, right: "-100px" }}
+            />
+        </div>
+
+        <div className="first__page"  data-aos="fade-up" >
+          <div
+            className="first-list first-lists"
+            style={{ transform: `translateX(-${(cardWidth * activeIdxMob) + (30 * activeIdxMob)}px)` }}
+          >
+            {data.map((e, i) => (
+              <Link
+              to="/product"
+                className="first-link"
+                style={activeIdxMob === i ? {} : { opacity: 0, pointerEvents: "none" }}
+              >
+                <div className="first-title">
+                  <img src={e.img} alt="" className="first-img" />
+                  <h4 className="first-name">{e.title}</h4>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="homeproducts__pagination">
+            {data.map((_, i) => (
+              <button
+              className={`homeproducts__pagination-btn ${activeIdxMob === i ? "active" : ""}`}
+              onClick={() => setActiveIdxMob(i)}
+              ></button>
+            ))}
+          </div>
+            <SlideBtn
+              className="homeproducts__slide-prev"
+              onClick={() => setActiveIdxMob(prev => prev < 1 ? prev : prev - 1)}
+              style={{ ...slide_btn_styles, left: "-100px" }}
+            />
+            <SlideBtn
+              rightIcon
+              className="homeproducts__slide-next"
+              onClick={() => setActiveIdxMob(prev => prev + 1 > data.length - 1 ? prev : prev + 1)}
+              style={{ ...slide_btn_styles, right: "-100px" }}
+            />
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default First;
