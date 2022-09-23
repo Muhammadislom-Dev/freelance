@@ -1,49 +1,74 @@
-.about{
-    padding: 40px 0;
+.homeabout {
+  background-color: #302780;
+  color: var(--white-color);
+  padding: 100px 0 30px;
+  position: relative;
+  overflow: hidden;
 }
 
-.about .container{
-    display: flex;
-    align-items: center;
-    justify-content:center;
+.homeabout .container {
+  position: relative;
+  z-index: 2;
 }
 
-.about-img{
-    width: 400px;
-    height: 350px;
+.homeabout__container-desktop {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px 100px;
+  position: relative;
+  z-index: 1;
 }
 
-.about-name{
-    color: black;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 50px;
+.homeabout__left-title,
+.homeabout__right-title {
+  font-weight: 700;
+  font-size: 75px;
+  color: var(--pink-light);
+  line-height: 73.78px;
 }
 
-.about-cost{
-    font-size: 18px;
-    font-weight: bold;
+.homeabout__left-side {
+  width: 30%;
+  margin-top: 80px;
 }
 
-.about-button{
-    width: 180px;
-    height: 45px;
-    background-color: dodgerblue;
-    border-radius: 8px;
-    border: 2px solid dodgerblue;
-    color: #fff;
-    font-size: 18px;
-    line-height: 22px;
-    transition: 0.3s;
-}
-.about-button:hover{
-    background-color: transparent;
-    color: dodgerblue;
-    border: 3px solid dodgerblue;
+.homeabout__left-title {
+  margin-bottom: 20px;
 }
 
-.about-left{
-    margin: 0 45px;
-    width: 400px;
+.homeabout__left-text {
+  font-size: 17.86px;
+  line-height: 26.79px;
+  font-weight: 400;
 }
 
+.homeabout__center {
+  width: 500px;
+}
+
+.homeabout__center img {
+  width: 650px;
+}
+
+.homeabout__right-side {
+  margin-top: 250px;
+  width: 20%;
+  text-align: end;
+}
+
+.homeabout__right-title {
+  margin-bottom: 30px;
+}
+
+.homeabout__right-btn {
+  background-color: var(--orange-light);
+  color: var(--blue-normal);
+  border-radius: 84px;
+  padding: 10px 58px;
+  margin-left: auto;
+  margin-right: 30px;
+  display: block;
+  font-size: 22px;
+  width: max-content;
+  text-decoration: none;
+}
