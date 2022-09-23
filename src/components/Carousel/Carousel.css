@@ -38,6 +38,10 @@
     transition: 0.5s;
 }
 
+.carousel-star{
+    margin-left: 90px;
+}
+
 .carousel-link:hover{
     color: #F6F6F6;
 }
